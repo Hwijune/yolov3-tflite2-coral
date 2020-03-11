@@ -20,9 +20,9 @@ r"""Using TF Lite to run an image with yolov3 model using an Edge TPU.
 
    Example usage (use `install_requirements.sh` to get these files):
    ```
-   python3 classify_image.py \
-     --model models/mobilenet_v2_1.0_224_inat_bird_quant_edgetpu.tflite  \
-     --labels models/inat_bird_labels.txt \
+   python3 yolov3_tflite.py \
+     --model models/yolov3.tflite  \
+     --labels models/coco.txt \
      --input images/parrot.jpg
    ```
 """
