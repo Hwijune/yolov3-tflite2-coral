@@ -93,7 +93,8 @@ def main():
   labels = load_labels(args.labels) if args.labels else {}
   interpreter = make_interpreter(args.model)
   interpreter.allocate_tensors()
-
+  print("Interpreter is created!")
+  exit()
   image = Image.open(args.input)
   scale = detect.set_input(interpreter, image.size,
                            lambda size: image.resize(size, Image.ANTIALIAS))
